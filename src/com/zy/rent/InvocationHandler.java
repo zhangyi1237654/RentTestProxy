@@ -18,16 +18,11 @@ public class InvocationHandler implements java.lang.reflect.InvocationHandler {
 	}
 	@Override
 	public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-		seeHouse();
+		
 		Object result = method.invoke(rent, "出租");
-		fare();
+		
 		return result;
 	}
-	private void seeHouse(){
-		System.out.println("看房");
-	}
-	private void fare(){
-		System.out.println("收费");
-	}
+
 
 }

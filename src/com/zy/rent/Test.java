@@ -8,7 +8,7 @@ public class Test {
 		InvocationHandler ih = new InvocationHandler();
 		ih.setRent(host);
 		Rent rent = (Rent) ih.getProxy();
-		rent.rent("45456");
+		rent.rent(" ");
 	}
 
 }
